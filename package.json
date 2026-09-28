@@ -1,0 +1,25 @@
+{
+  "name": "air-source-tracker",
+  "version": "1.0.0",
+  "description": "Fictional local air pollution source apportionment backend",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/api/main.js",
+    "cli": "node dist/src/cli/main.js",
+    "demo": "node scripts/demo.mjs",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "airqs": "dist/src/cli/main.js"
+  }
+}
